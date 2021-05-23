@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CouponCode</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 class="title">More deals for you!</h3>
+      <p class="sub-title">More discounts for your flight</p>
+      <div class="close-icon" id="close-icon"><i class="fas fa-times"></i></div>
+      <div class="container__cards">
+        <div class="cards">
+          <p class="price-tag">Flat</p>
+          <h4 class="cards__title">Rs.500 <span>Off</span></h4>
+          <p class="cards__coupon-code" id="first-coupon-code">mmtflat500</p>
+          <p class="cards__conditions">valid on min 3 tickets booking</p>
+          <button class="cards_copy-btn" onclick="Copy('first-coupon-code')">
+            copy
+          </button>
+        </div>
+        <div class="cards">
+          <p class="price-tag">Flat</p>
+          <h4 class="cards__title">Rs.300 <span>Off</span></h4>
+          <p class="cards__coupon-code" id="second-coupon-code">flymmt300</p>
+          <p class="cards__conditions">valid on min 3 tickets booking</p>
+          <button class="cards_copy-btn" onclick="Copy('second-coupon-code')">
+            copy
+          </button>
+        </div>
+        <div class="cards">
+          <p class="price-tag">Flat</p>
+          <h4 class="cards__title">Rs.150 <span>Off</span></h4>
+          <p class="cards__coupon-code" id="third-coupon-code">flymmt150</p>
+          <p class="cards__conditions">valid on min 3 tickets booking</p>
+          <button class="cards_copy-btn" onclick="Copy('third-coupon-code')">
+            copy
+          </button>
+        </div>
+        <div class="cards">
+          <p class="price-tag">upto</p>
+          <h4 class="cards__title">Rs.2500 <span>Off</span></h4>
+          <p class="cards__coupon-code" id="fourth-coupon-code">mmtbest</p>
+          <p class="cards__conditions">valid on min 3 tickets booking</p>
+          <button class="cards_copy-btn" onclick="Copy('fourth-coupon-code')">
+            copy
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="inputBox">
+      <input type="text" class="inputBox__textarea" />
+      <button class="show-coupon-card">Show Coupons</button>
+    </div>
+
+    <script defer src="app.js"></script>
+  </body>
+</html>
