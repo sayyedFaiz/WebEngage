@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 5px solid #97f679;
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+}
+
+.container__logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+}
+
+.logo {
+  width: 50%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #eff1f7;
+  padding: 1em 0;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+.main__title {
+  font-size: 1em;
+  margin-bottom: 1em;
+  max-width: 50%;
+  text-transform: capitalize;
+}
+
+.main__question {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  max-width: 50%;
+  margin-bottom: 1.2em;
+}
+
+.card-container form {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 0.8em;
+  background-color: red;
+  border-radius: 5px;
+  margin: 0 0.1em;
+}
+
+.cards label {
+  margin-bottom: 0.5em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.zero {
+  background-color: #ed6f67;
+}
+.one {
+  background-color: #ed6f67;
+}
+.two {
+  background-color: #ed6f67;
+}
+.three {
+  background-color: #ed6f67;
+}
+.four {
+  background-color: #ed6f67;
+}
+.five {
+  background-color: #ed6f67;
+}
+.six {
+  background-color: #ed6f67;
+}
+.seven {
+  background-color: #f7b64b;
+}
+.eight {
+  background-color: #f7b64b;
+}
+.nine {
+  background-color: #57c077;
+}
+.ten {
+  background-color: #57c077;
+}
+
+
+
+.submit {
+  margin-top: 1.5em;
+  padding: 0.5em 20%;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background-color: #5bc431;
+  border: 0;
+  outline: 0;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 780px) and (min-width: 540px) {
+  .main__title {
+    font-size: 0.8em;
+  }
+  .main__question {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .main__title {
+    font-size: 0.8em;
+    max-width: 70%;
+  }
+  .main__question {
+    font-size: 1em;
+    max-width: 100%;
+  }
+}
